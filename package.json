@@ -1,0 +1,26 @@
+{
+    "name": "moon_test",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "serve": "nodemon server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/friaz85/moon_test.git"
+    },
+    "author": "Alejandro Fernando Frias Torres",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/friaz85/moon_test/issues"
+    },
+    "homepage": "https://github.com/friaz85/moon_test#readme",
+    "dependencies": {
+        "@types/socket.io": "^2.1.10",
+        "express": "^4.17.1",
+        "nodemon": "^2.0.4",
+        "socket.io": "^2.3.0"
+    }
+}
