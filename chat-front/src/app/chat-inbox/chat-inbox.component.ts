@@ -9,7 +9,7 @@ const SOCKET_ENDPOINT = "localhost:3000";
 })
 export class ChatInboxComponent implements OnInit {
   socket;
-  message: String;
+  message: string;
 
   constructor() {}
 
