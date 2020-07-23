@@ -1,10 +1,18 @@
-<div class="chat-messages">
-    <div class="chat-messages-show-container">
-        <ul class="chat-messages-show-list">
-        </ul>
+<div class="container h-100 d-flex" *ngIf="!name">
+    <div class="jumbotron my-auto text-center">
+        <h1 class="display-4">Iniciar sesión</h1>
+        <input class="form-control" type="text" placeholder="Ingresa tu usuario" [(ngModel)]="username" />
+        <button class="btn btn-secondary mt-4" (click)="login()">Login</button>
+    </div>
+</div>
+<div class="chat-messages" *ngIf="name">
+    <div class="chat-messages-show-container" id="msg-container">
+        <ul class="chat-messages-show-list" id="message-list"></ul>
     </div>
     <div class="chat-messages-create-container">
-        <input class="chat-messages-create-input" type="text">
-        <button class="chat-messages-create-button" (click)="SendMessage()"> Send </button>
+        <input class="chat-messages-create-input" type="text" [(ngModel)]="message" />
+        <button class="chat-messages-create-button" (click)="SendMessage()">
+      Enviar
+    </button>
     </div>
 </div>
